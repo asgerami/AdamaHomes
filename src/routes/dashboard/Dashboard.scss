@@ -1,0 +1,92 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: auto;
+
+  .main-content {
+    flex-grow: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+    overflow-y: auto;
+
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .stats-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 30px;
+
+      .stat-box {
+        background-color: #ff9505;
+        color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        flex: 1 1 200px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        h2 {
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 32px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .charts-container {
+      overflow: visible;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .revenue-chart,
+      .revenue-breakdown {
+        background-color: #e8e8e8;
+        padding: 20px;
+        border-radius: 10px;
+        flex: 1;
+        text-align: center;
+      }
+
+      .revenue-chart {
+        display: flex;
+        justify-content: center; /* Centering the chart */
+        align-items: center;
+        height: 400px; /* Adjust height to reduce size */
+      }
+
+      .revenue-breakdown {
+        height: 300px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .dashboard {
+      flex-direction: column;
+    }
+
+    .main-content {
+      padding: 10px;
+
+      .stats-container {
+        flex-direction: column;
+      }
+    }
+  }
+}
