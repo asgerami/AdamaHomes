@@ -101,6 +101,21 @@ function NewPostPage() {
               <label htmlFor="restaurant">Restaurant</label>
               <input min={0} id="restaurant" name="restaurant" type="number" />
             </div>
+            <div className="item uploadDocuments">
+              <h3>Upload Documents</h3>
+              <div className="uploadItem">
+                <label htmlFor="deed">Property Deed</label>
+                <input id="deed" name="deed" type="file" />
+              </div>
+              <div className="uploadItem">
+                <label htmlFor="tax">Last Year's Tax Receipts</label>
+                <input id="tax" name="tax" type="file" />
+              </div>
+              <div className="uploadItem">
+                <label htmlFor="idCard">ID Card</label>
+                <input id="idCard" name="idCard" type="file" />
+              </div>
+            </div>
             <button className="sendButton">Add</button>
           </form>
         </div>
