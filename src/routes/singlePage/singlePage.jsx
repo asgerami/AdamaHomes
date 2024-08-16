@@ -2,8 +2,13 @@ import "./singlePage.scss";
 import Slider from "../../components/slider/Slider";
 import Map from "../../components/map/Map";
 import { singlePostData, userData } from "../../lib/dummydata";
+import { useNavigate } from "react-router-dom";
 
 function SinglePage() {
+  const navigate = useNavigate();
+  const handleBuyClick = () => {
+    navigate("/purchase", { state: { property: singlePostData } });
+  };
   return (
     <div className="singlePage">
       <div className="details">
@@ -19,10 +24,9 @@ function SinglePage() {
                 </div>
                 <div className="price">Birr {singlePostData.price}</div>
               </div>
-              <div className="user">
-                <img src={userData.img} alt="" />
-                <span>{userData.name}</span>
-              </div>
+              <button className="buyButton" onClick={handleBuyClick}>
+                Buy
+              </button>
             </div>
             <div className="bottom">{singlePostData.description}</div>
           </div>

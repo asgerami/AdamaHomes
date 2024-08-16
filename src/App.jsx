@@ -15,6 +15,7 @@ import Dashboard from "./routes/dashboard/Dashboard";
 import Properties from "./routes/propertiesAdmin/Properties";
 import ListingApproval from "./routes/approvalAdmin/listingApproval";
 import Customers from "./routes/customers/Customers";
+import PurchasePage from "./components/purchasePage/PurchasePage";
 
 function App() {
   const router = createBrowserRouter([
@@ -61,6 +62,10 @@ function App() {
         {
           path: "/customers",
           element: <Customers />
+        },
+        {
+          path: "/purchase",
+          element: <PurchasePage />
         },
       ],
     },

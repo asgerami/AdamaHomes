@@ -69,26 +69,24 @@
               font-weight: 300;
             }
           }
-          .user {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-            padding: 0px 50px;
-            border-radius: 10px;
-            background-color: rgba(254, 205, 81, 0.209);
-            font-weight: 600;
+          .buyButton {
+            padding: 12px 24px;
+            background-color: #fece51;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
 
-            @include sm {
-              padding: 20px 50px;
+            &:hover {
+              background-color: #fdb813;
             }
 
-            img {
-              width: 50px;
-              height: 50px;
-              border-radius: 50%;
-              object-fit: cover;
+            @include sm {
+              width: 100%;
+              padding: 10px;
             }
           }
         }
