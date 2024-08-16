@@ -10,13 +10,14 @@ function adminNavbar() {
     <nav>
       <div className="left">
         <a href="/" className="logo">
-          <img src="/logo.png" alt="" />
+          <img src="/logo.png" alt="Adama Homes Logo" />
           <span>Adama Homes</span>
         </a>
         <a href="/dashboard">Dashboard</a>
         <a href="/properties">Properties</a>
         <a href="/listingapproval">Listing Approval</a>
         <a href="/customers">Customers</a>
+        <a href="/login">SignOut</a>
       </div>
       <div className="right">
         {user ? (

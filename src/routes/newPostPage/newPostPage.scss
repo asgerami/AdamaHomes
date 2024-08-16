@@ -46,7 +46,7 @@
           width: 100%;
           border-radius: 5px;
           border: none;
-          background-color: teal;
+          background-color: rgb(255, 149, 5);;
           color: white;
           font-weight: bold;
           cursor: pointer;
@@ -78,12 +78,12 @@
     flex-direction: column;
 
     .sideContainer {
-      display: none; // Hide the side container on mobile devices
+      display: none;
     }
 
     .formContainer {
-      flex: 1; // Make the formContainer full width on mobile devices
-      margin: 0 20px; // Add some margin to prevent the form from touching the edges
+      flex: 1;
+      margin: 0 20px;
     }
   }
 }

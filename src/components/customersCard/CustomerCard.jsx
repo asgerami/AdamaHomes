@@ -9,7 +9,10 @@ function CustomerCard({ customer, onDelete, onDisable }) {
         <p>{customer.email}</p>
       </div>
       <div className="customer-actions">
-        <button className="disable-btn" onClick={() => onDisable(customer.id)}>
+        <button
+          className="disable-btn"
+          onClick={() => onDisable(customer.id)}
+        >
           {customer.isDisabled ? "Enable" : "Disable"}
         </button>
         <button className="delete-btn" onClick={() => onDelete(customer.id)}>
