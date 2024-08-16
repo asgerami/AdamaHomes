@@ -5,7 +5,7 @@ import { Outlet, useLocation } from "react-router-dom";
 
 function Layout() {
   const location = useLocation();
-  const hideNavbarOnDashboard = location.pathname.includes("dashboard") || location.pathname.includes("properties") || location.pathname.includes("listingapproval");
+  const hideNavbarOnDashboard = location.pathname.includes("dashboard") || location.pathname.includes("properties") || location.pathname.includes("listingapproval") || location.pathname.includes("customers");
 
   return (
     <div className="layout">

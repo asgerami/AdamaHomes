@@ -14,6 +14,7 @@ import ForgotPassword from "./routes/forgetPassword/forgotPassword";
 import Dashboard from "./routes/dashboard/Dashboard";
 import Properties from "./routes/propertiesAdmin/Properties";
 import ListingApproval from "./routes/approvalAdmin/listingApproval";
+import Customers from "./routes/customers/Customers";
 
 function App() {
   const router = createBrowserRouter([
@@ -56,6 +57,10 @@ function App() {
         {
           path: "/listingapproval",
           element: <ListingApproval />
+        },
+        {
+          path: "/customers",
+          element: <Customers />
         },
       ],
     },

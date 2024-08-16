@@ -16,7 +16,7 @@ function adminNavbar() {
         <a href="/dashboard">Dashboard</a>
         <a href="/properties">Properties</a>
         <a href="/listingapproval">Listing Approval</a>
-        <a href="/">Customers</a>
+        <a href="/customers">Customers</a>
       </div>
       <div className="right">
         {user ? (
@@ -40,8 +40,8 @@ function adminNavbar() {
           <a href="/dashboard">Dashboard</a>
           <a href="/properties">Properties</a>
           <a href="/listingapproval">Listing Approval</a>
-          <a href="/">Customers</a>
-          <a href="/">SignOut</a>
+          <a href="/customers">Customers</a>
+          <a href="/login">SignOut</a>
         </div>
       </div>
     </nav>
